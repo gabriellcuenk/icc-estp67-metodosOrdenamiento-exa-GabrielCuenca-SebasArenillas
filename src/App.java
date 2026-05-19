@@ -1,3 +1,4 @@
+import controllers.BrandController;
 import models.Brand;
 import models.CarModel;
 import models.CarYear;
@@ -5,15 +6,9 @@ import models.CarYear;
 public class App {
         public static void main(String[] args) throws Exception {
                 System.out.println("Examen interciclo de Estructuras de Datos");
-                System.out.println("====Configurar studente.env====");
-
+                System.out.println("====Configurar student.env====");
         }
 
-        /**
-         * Crea un arreglo de marcas de ejemplo para pruebas
-         * 
-         * @return Arreglo de marcas con modelos y años
-         */
         public static Brand[] createBrands() {
                 // ===== HONDA =====
                 CarYear[] civicYears = {

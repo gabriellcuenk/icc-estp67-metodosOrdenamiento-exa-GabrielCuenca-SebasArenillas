@@ -188,7 +188,32 @@ No encontrada
 **INSTRUCCIONES**: Ejecute `App.java` y copie TODA la salida de consola aquí (Ctrl+C / Ctrl+V):
 
 ```
-[COPIE AQUÍ LA SALIDA COMPLETA DE LA CONSOLA]
+Examen interciclo de Estructuras de Datos
+====Configurar student.env====
+
+Original:
+Honda - Anios validos: 6
+Toyota - Anios validos: 10
+Ford - Anios validos: 5
+Chevrolet - Anios validos: 8
+Nissan - Anios validos: 7
+Mazda - Anios validos: 12
+Hyundai - Anios validos: 8
+
+Ordenado por Bubble Sort descendente:
+Mazda - Anios validos: 12
+Toyota - Anios validos: 10
+Chevrolet - Anios validos: 8
+Hyundai - Anios validos: 8
+Nissan - Anios validos: 7
+Honda - Anios validos: 6
+Ford - Anios validos: 5
+
+Buscar marca con 7 anios validos que se ordenaron de mayor a menor:
+Encontrada: Marca: Nissan, Total de anios validos: 7
+
+Buscar marca con 4 años validos que se ordenaron de mayor a menor:
+No encontrada
 ```
 
 ---
