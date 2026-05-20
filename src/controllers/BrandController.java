@@ -18,6 +18,43 @@ public class BrandController {
     return brands;
   }
 
+  public Brand binarySearchByValidYears(Brand[] brands, int validYears, boolean isAscending) {
+    int izquierda = 0;
+    int derecha = brands.length - 1;
+    Brand brand = null;
+    int buscando = 1;
+
+    while (izquierda <= derecha) {
+      if (buscando == 1) {
+        int medio = izquierda + (derecha - izquierda) / 2;
+        int years = brands[medio].getTotalValidYears();
+
+        if (years == validYears) {
+          brand = brands[medio];
+          buscando = 0;
+        } else {
+          if (isAscending) {
+            if (years < validYears) {
+              izquierda = medio + 1;
+            } else {
+              derecha = medio - 1;
+            }
+          } else {
+            if (years < validYears) {
+              derecha = medio - 1;
+            } else {
+              izquierda = medio + 1;
+            }
+          }
+        }
+      } else {
+        izquierda = derecha + 1;
+      }
+    }
+
+    return brand;
+  }
+
   
 
 }
